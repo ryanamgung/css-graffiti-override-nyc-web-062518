@@ -1,28 +1,3 @@
-/* write your override styles here */
-+#wall .tag-1{
-+  z-index: -1
-+}
-+
-+#wall div#tag-2{
-+  z-index: -1
-+}
-+
-+#wall div#tag-3.slick.wicked{
-+  z-index: -1
-+}
-+
-+#wall div.parent div#tag-4{
-+  z-index: -1
-+}
-
-#wall div.parent div#tag-5.slick{
-  z-index: -1
-}
-
-body div#wall div.parent div:last-child div#tag-6{
-  z-index: -1;
-}
-
-#wall:last-child div.parent div > #tag-7.slick{
-  z-index: -1
-}
+#wall .tag-1, #wall .tag-1 ~ #tag-2, #wall .slick, #wall .parent {
+    display: none;
+} 
